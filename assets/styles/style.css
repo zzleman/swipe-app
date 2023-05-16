@@ -87,9 +87,10 @@ h2{
     margin-left: 20px;
   }
 .info :nth-child(2){
-    color: #7f8b9b;
+  color: #7f8b9b;
 	font-size: 14px;
 	margin-top: 3px;
+  float: left;
   }
 .status-on{
     float: right;
