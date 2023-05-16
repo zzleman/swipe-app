@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#7fc469;
+}
+.container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: max-content;
+    width: 400px;
+    text-align: center;
+    margin-left: 500px;
+}
+h2{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ebedec;
+}
+.tab.active {
+  background-color: #7fc469;
+  color: white;
+}
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 20px 40px;
+    height: 40px;
+    width: 80%;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+  }
+  
+.tabs > * {
+    width: 100%;
+    color:rgb(87, 87, 87);
+    background-color:#e9ecf1;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.tabs :first-child{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-right: 1px solid #c1c4c9;
+  }
+.tabs :nth-child(2){
+    border-right: 1px solid #c1c4c9;
+  }
+.tabs :last-child{
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+.tabs > *:hover{
+    background-color: #7fc469;
+    color: white;
+  }
+  
+.wrap{
+    padding: 10px 20px;
+    border-top: 1px solid #ebedec; ;
+	border-bottom: 1px solid #ebedec;
+	cursor: pointer;
+    list-style: none;
+  }
+.wrap:hover{
+    background: #e9ecf1;
+  }
+.option-left{
+	display: flex;
+	align-items: center;
+  }
+.option-left img{
+    width: 70px;
+	 height: 70px;
+	 display: block;
+   object-fit: cover;
+    border-radius: 50%;
+  }
+.info{
+    margin-left: 20px;
+  }
+.info :nth-child(2){
+    color: #7f8b9b;
+	font-size: 14px;
+	margin-top: 3px;
+  }
+.status-on{
+    float: right;
+    top: -40px;
+    position: relative;
+	color: #77818d;
+}
+.status-on::before{
+    content: "";
+	position: absolute;
+	top: 5px;
+    left: -15px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+    background: #7fc469;
+}
+.status-off{
+    float: right;
+    top: -40px;
+    position: relative;
+    color: #b3bbc8;
+}
+.status-off::before{
+    content: "";
+	position: absolute;
+	top: 5px;
+    left: -15px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #b3bbc8;
+  }
+.male{
+    display: none;
+  }
+.female{
+    display: none;
+  }
